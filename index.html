@@ -3,7 +3,669 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>UBA</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/design-system.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- THE HEADER -->
+    <header>
+      <!-- mobile-menu -->
+      <div class="navbar container flex">
+        <span class="open-icon"><i class="ri-align-justify"></i></span>
+        <span class="hide close-icon"><i class="ri-close-fill"></i></span>
+        <div class="mobile-dropdown hide-mobile-dropdown">
+          <div class="mobile-dropdown-wrapper">
+            <div class="mobile-search-container">
+              <div class="mobile-search-icon">
+                <span><i class="ri-search-line"></i></span>
+              </div>
+              <div class="mobile-input-filed">
+                <input
+                  type="text"
+                  id="dsh-mobile-menu-shop-search-input"
+                  class="dsh-mobile-menu-search"
+                  autocomplete="off"
+                  value
+                  name="s"
+                  placeholder="Search..."
+                  data-gtm-form-interact-field-id="0"
+                />
+              </div>
+            </div>
+            <!-- button field -->
+            <div class="mobile-bankbutton">
+              <li class="mobile-navbar-item">
+                <button class="mobile-internet-button">
+                  <a class="INTERNET" href="#"
+                    ><span><i class="ri-lock-line"></i></span> UBA INTERNET
+                    BANKING</a
+                  >
+                </button>
+              </li>
+            </div>
+            <!-- new media query holder -->
+            <ul class="navbar-links2">
+              <!-- banking dropdown -->
+              <li class="navbar-item2">
+                <div class="text-and-icon-container">
+                  <div class="nav-text-holder">
+                    <a class="mobile-nav-text" href="#">BANKING</a>
+                  </div>
+                  <div class="icon-holder">
+                    <button class="show-banking-menu-btn" id="add-button">
+                      <i class="ri-add-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- dropdown -->
+
+                <!-- banking-dropdown -->
+                <div class="mobile-dropdown-wrapper-on-list">
+                  <ul class="mobile-banking-list hide-banking-dropdown">
+                    <li class="mobile-banking-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Personal Banking</a
+                      >
+                    </li>
+                    <li class="mobile-banking-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Coporate Banking</a
+                      >
+                    </li>
+                    <li class="mobile-banking-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Digital Banking</a
+                      >
+                    </li>
+
+                    <li class="mobile-banking-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Energy Banking</a
+                      >
+                    </li>
+                    <li class="mobile-banking-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Energy Banking</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- about uba dropdown -->
+              <li class="navbar-item2">
+                <div class="text-and-icon-container">
+                  <div class="nav-text-holder">
+                    <a class="mobile-nav-text" href="#">About UBA</a>
+                  </div>
+                  <div class="icon-holder">
+                    <button class="show-about-menu-btn" id="add-button">
+                      <i class="ri-add-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- dropdown -->
+
+                <!-- banking-dropdown -->
+                <div class="mobile-dropdown-wrapper-on-list">
+                  <ul class="mobile-about-list hide-about-dropdown">
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href="">History</a>
+                    </li>
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Leadership</a
+                      >
+                    </li>
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Business Focus</a
+                      >
+                    </li>
+
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Awards & Achievements</a
+                      >
+                    </li>
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Strength & Alliances</a
+                      >
+                    </li>
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Service Charter</a
+                      >
+                    </li>
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href="">Careers</a>
+                    </li>
+                    <li class="mobile-about-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Our Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- investor dropdown -->
+              <li class="navbar-item2">
+                <div class="text-and-icon-container">
+                  <div class="nav-text-holder">
+                    <a class="mobile-nav-text" href="#">Investors</a>
+                  </div>
+                  <div class="icon-holder">
+                    <button class="show-invest-menu-btn" id="add-button">
+                      <i class="ri-add-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- dropdown -->
+
+                <!-- banking-dropdown -->
+                <div class="mobile-dropdown-wrapper-on-list">
+                  <ul class="mobile-invest-list hide-invest-dropdown">
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Investor</a
+                      >
+                    </li>
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Investor Information</a
+                      >
+                    </li>
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Financial Results</a
+                      >
+                    </li>
+
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href="">AGM</a>
+                    </li>
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >CEO’s Overview</a
+                      >
+                    </li>
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Credit Ratings</a
+                      >
+                    </li>
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >GDR Programme</a
+                      >
+                    </li>
+                    <li class="mobile-invest-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Quick Facts</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- media dropdown -->
+              <li class="navbar-item2">
+                <div class="text-and-icon-container">
+                  <div class="nav-text-holder">
+                    <a class="mobile-nav-text" href="#">Media</a>
+                  </div>
+                  <div class="icon-holder">
+                    <button class="show-media-menu-btn" id="add-button">
+                      <i class="ri-add-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- dropdown -->
+
+                <!-- media-dropdown -->
+                <div class="mobile-dropdown-wrapper-on-list">
+                  <ul class="mobile-media-list hide-media-dropdown">
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">Media</a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">News </a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Photo & Video Library</a
+                      >
+                    </li>
+
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">Blog</a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Press Releases</a
+                      >
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">Events</a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Lion King Magazine</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- csr dropdown -->
+              <li class="navbar-item2">
+                <div class="text-and-icon-container">
+                  <div class="nav-text-holder">
+                    <a class="mobile-nav-text" href="#">Csr</a>
+                  </div>
+                  <div class="icon-holder">
+                    <button class="show-csr-menu-btn" id="add-button">
+                      <i class="ri-add-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- dropdown -->
+
+                <!-- media-dropdown -->
+                <div class="mobile-dropdown-wrapper-on-list">
+                  <ul class="mobile-csr-list hide-csr-dropdown">
+                    <li class="mobile-csr-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >UBA Foundation</a
+                      >
+                    </li>
+                    <li class="mobile-csr-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Education</a
+                      >
+                    </li>
+                    <li class="mobile-csr-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Empowerment</a
+                      >
+                    </li>
+
+                    <li class="mobile-csr-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Environment</a
+                      >
+                    </li>
+                    <li class="mobile-csr-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Special Projects</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-text" href="#">Sustainbility</a>
+              </li>
+              <li class="navbar-item2">
+                <div class="country-map-and-icon-holder">
+                  <div class="country-map-wrapper">
+                    <a class="nav-text" href="#"
+                      ><img
+                        class="mobile-word-map"
+                        src="./images/word-map4.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="icon-holder">
+                    <button class="show-invest-menu-btn" id="add-button">
+                      <i class="ri-add-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- dropdown -->
+
+                <!-- media-dropdown -->
+                <div class="mobile-dropdown-wrapper-on-list">
+                  <ul class="mobile-media-list hide-media-dropdown">
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">Media</a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">News </a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Photo & Video Library</a
+                      >
+                    </li>
+
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">Blog</a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Press Releases</a
+                      >
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href="">Events</a>
+                    </li>
+                    <li class="mobile-media-review-list">
+                      <a class="mobile-dropdown-review-list" href=""
+                        >Lion King Magazine</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-text" href="#">Open an Account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- laptop-menu -->
+
+        <nav class="nav-menu">
+          <ul class="navbar-links">
+            <li class="internet-button-wrapper">
+              <button class="internet-button">
+                <a class="INTERNET" href="#"
+                  ><span><i class="ri-lock-line"></i></span> UBA INTERNET
+                  BANKING</a
+                >
+              </button>
+            </li>
+
+            <li class="navbar-item-home">
+              <a class="ri-home-3" href="#">
+                <span><i class="ri-home-3-fill"></i></span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-text" href="#">BANKING</a>
+              <div class="dropdown">
+                <div class="dropdown-wrapper">
+                  <div class="banking-list">
+                    <ul>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Personal Banking</a>
+                      </li>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Coporate Banking</a>
+                      </li>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Digital Banking</a>
+                      </li>
+
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Energy Banking</a>
+                      </li>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Energy Banking</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="banking-review-write-up">
+                    <h2 class="banking-head">Personal Banking</h2>
+                    <p class="banking-paragraph">
+                      Banking made easier through <br />
+                      innovation.
+                    </p>
+                  </div>
+                  <div class="banking-review-image">
+                    <div class="banking-image-container"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-text" href="#">ABOUT UBA</a>
+              <div class="dropdown">
+                <div class="dropdown-wrapper">
+                  <div class="banking-list">
+                    <ul>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Personal Banking</a>
+                      </li>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Coporate Banking</a>
+                      </li>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Digital Banking</a>
+                      </li>
+
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Energy Banking</a>
+                      </li>
+                      <li class="banking-review-list">
+                        <a class="review-list" href="">Energy Banking</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="about-review-write-up">
+                    <h2 class="about-head">About UBA</h2>
+                    <p class="about-paragraph">
+                      United Bank for Africa (UBA) PLC is a <br />
+                      leading pan-African financial services <br />
+                      institution with a global footprint.
+                    </p>
+                  </div>
+                  <div class="about-review-image">
+                    <div class="about-image-container"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-text" href="#">INVESTORS</a>
+              <div class="dropdown">
+                <div class="dropdown-wrapper">
+                  <div class="investor-list">
+                    <ul>
+                      <li class="investor-review-list">
+                        <a class="review-list" href="">Investors</a>
+                      </li>
+                      <li class="investor-review-list">
+                        <a class="review-list" href=""
+                          >Global Investor Services</a
+                        >
+                      </li>
+                      <li class="investor-review-list">
+                        <a class="review-list" href=""> Investor Information</a>
+                      </li>
+
+                      <li class="investor-review-list">
+                        <a class="review-list" href="">Financial Results</a>
+                      </li>
+                      <li class="investor-review-list">
+                        <a class="review-list" href=""> AGMCEO’s Overview</a>
+                      </li>
+                      <li class="investor-review-list">
+                        <a class="review-list" href=""> Credit Ratings</a>
+                      </li>
+                      <li class="investor-review-list">
+                        <a class="review-list" href=""> GDR Programme</a>
+                      </li>
+                      <li class="investor-review-list">
+                        <a class="review-list" href="">Quick Facts</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="investor-review-write-up">
+                    <h2 class="investor-head">Investors</h2>
+                    <p class="investor-paragraph">
+                      Our financial reports, share <br />
+                      information, analyst reports, credit <br />
+                      ratings, etc. are available here.
+                    </p>
+                  </div>
+                  <div class="investor-review-image">
+                    <div class="investor-image-container"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-text" href="#">csr</a>
+              <div class="dropdown">
+                <div class="dropdown-wrapper">
+                  <div class="csr-list">
+                    <ul>
+                      <li class="csr-review-list">
+                        <a class="review-list" href=""> Media</a>
+                      </li>
+                      <li class="media-review-list">
+                        <a class="review-list" href="">News</a>
+                      </li>
+                      <li class="media-review-list">
+                        <a class="review-list" href="">Photo & Video Library</a>
+                      </li>
+
+                      <li class="media-review-list">
+                        <a class="review-list" href="">Blog </a>
+                      </li>
+                      <li class="media-review-list">
+                        <a class="review-list" href=""> Press Releases</a>
+                      </li>
+                      <li class="media-review-list">
+                        <a class="review-list" href="">Events </a>
+                      </li>
+                      <li class="media-review-list">
+                        <a class="review-list" href="">Lion King Magazine </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="media-review-write-up">
+                    <h2 class="media-head">Media</h2>
+                    <p class="media-paragraph">
+                      Find news, media mentions,<br />
+                      and press related materials <br />
+                      here.
+                    </p>
+                  </div>
+                  <div class="media-review-image">
+                    <div class="media-image-container"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-text" href="#">CSR</a>
+              <div class="dropdown">
+                <div class="dropdown-wrapper">
+                  <div class="csr-list">
+                    <ul>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">UBA Foundation</a>
+                      </li>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Education</a>
+                      </li>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Empowerment</a>
+                      </li>
+
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Environment</a>
+                      </li>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Special Projects</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="csr-review-write-up">
+                    <h2 class="csr-head">UBA Foundation</h2>
+                    <p class="csr-paragraph">
+                      United Bank for Africa (UBA) PLC, <br />
+                      Africa’s global bank, is committed to <br />
+                      being a socially responsible <br />
+                      company and role model for all businesses in Africa.
+                    </p>
+                  </div>
+                  <div class="csr-review-image">
+                    <div class="csr-image-container"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-text" href="#">SUSTAINABILITY</a>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-text" href="#"
+                ><img
+                  class="word-map"
+                  src="./images/globe-uba-red_countries.svg"
+                  alt=""
+              /></a>
+              <div class="dropdown">
+                <div class="dropdown-wrapper">
+                  <div class="csr-list">
+                    <ul>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">UBA Foundation</a>
+                      </li>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Education</a>
+                      </li>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Empowerment</a>
+                      </li>
+
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Environment</a>
+                      </li>
+                      <li class="csr-review-list">
+                        <a class="review-list" href="">Special Projects</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="csr-review-write-up">
+                    <h2 class="csr-head">UBA Foundation</h2>
+                    <p class="csr-paragraph">
+                      United Bank for Africa (UBA) PLC, <br />
+                      Africa’s global bank, is committed to <br />
+                      being a socially responsible <br />
+                      company and role model for all businesses in Africa.
+                    </p>
+                  </div>
+                  <div class="csr-review-image">
+                    <div class="csr-image-container"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="navbar-item">
+              <a class="nav-open-acct" href="#">OPEN AN ACCOUNT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="uba-icon-wrapper">
+          <div class="search-icon-wrapper">
+            <span><i class="ri-search-2-line"></i></span>
+          </div>
+          <div class="uba-icon">
+            <img class="UBA-Logo" src="./images/UBA-Logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- link js -->
+    <script src="./js/design-system.js"></script>
+  </body>
 </html>
