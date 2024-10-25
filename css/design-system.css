@@ -1,5 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+:root {
+  --e-global-color-primary: #6ec1e4;
+  --e-global-color-secondary: #7a7a7a;
+  --first-color-alt: #d70900;
+  --title-color: #1e1e1e;
+  --e-global-color-text: #707070;
+  --white-color: #ffffff;
+  --body-color: #f4f4f4;
+  --e-global-color-bd6ef5f: #e5e5e5;
+  --box-shadow: 0 2px 16px #00000019;
+
+  /* Font and typography */
+  --biggest-font-size: 2.25rem;
+  --bigger-font-size: 2rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.2rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.94rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --smallest-font-size: 0.7rem;
+
+  /* Margin bottom */
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --mb-3-5: 3.5rem;
+  --mb-4: 4rem;
+
+  /* Font weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+}
+
+/* header section */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  z-index: 3;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  width: 1200px;
+  max-width: 95%;
+  height: 100%;
+}
+.nav-menu {
+  width: 90%;
+  height: 100%;
+}
+.navbar-links {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+}
+.internet-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internet-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400 !important;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  height: 65%;
+  border-radius: 0.3rem;
+  background: linear-gradient(90deg, #d51709 0%, #aa0000 100%) !important;
+}
+.internet-button:hover {
+  background: linear-gradient(90deg, #d51709 100%, #aa0000 0%) !important;
+}
+.internet-button span {
+  color: #fff;
+  font-size: var(--smaller-font-size);
+}
+.internet-button a {
+  color: #fff;
+  font-size: var(--smaller-font-size);
+}
+.navbar-item {
+  padding: 5px;
+  /* padding-top: 17px; */
+  font-weight: 400 !important;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.navbar-item-home {
+  padding-left: 10px;
+  padding-top: 35px;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  font-size: var(--big-font-size);
+}
+.ri-home-3-fill {
+  color: var(--e-global-color-text);
+}
+.ri-home-3-fill:hover {
+  color: var(--first-color-alt);
+}
+.navbar-item .nav-text {
+  position: relative;
+  color: var(--e-global-color-text);
+  transition: all 300ms ease;
+  font-size: var(--smallest-font-size);
+  font-family: "Roboto";
+  padding: 0 10px;
+}
+.navbar-item .nav-open-acct {
+  position: relative;
+  color: var(--first-color-alt);
+  transition: all 300ms ease;
+  font-size: var(--smallest-font-size);
+  font-family: "Roboto";
+  width: 100%;
+}
+.navbar-item:after {
+  content: "";
+  position: absolute;
+  background-color: #d51709;
+  height: 3px;
+  width: 0;
+  left: 30;
+  bottom: 20px;
+  transition: 0.01s;
+  border-radius: 3px;
+}
+.navbar-item .nav-text:hover {
+  color: var(--first-color-alt);
+}
+.navbar-item:hover:after,
+.navbar-item .nav-open-acct:hover:after {
+  width: 7%;
+}
+
+.uba-icon-wrapper {
+  width: 12%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.uba-icon {
+  width: 80%;
+}
+.UBA-Logo {
+  width: 80%;
+  height: 90%;
+}
+.search-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--e-global-color-text);
+}
+.search-icon-wrapper span {
+  font-size: 1.3rem;
+  padding-right: 15px;
+}
+.search-icon-wrapper span:hover {
+  color: #d51709;
+}
+
+/* dropdown-containerdesing */
+
+#add-button {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown {
+  display: flex;
+  width: 90%;
+  height: 70vh;
+  box-shadow: 2px 2px 25px #00000030, -2px -2px 25px #00000004;
+  background-color: var(--body-color);
+  flex-direction: column;
+  gap: var(--gap-2);
+  position: absolute;
+  left: 47px;
+  top: 95px;
+  transform: translateY(10px);
+  display: none;
+  opacity: 0;
+  transition: all 10.5s;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.navbar-item:hover .dropdown {
+  opacity: 1;
+  display: flex;
+  transform: translateY(-5px);
+}
+.dropdown-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.word-map {
+  width: 30px;
+}
+
+.banking-list,
+.investor-list,
+.media-list,
+.csr-list {
+  width: 24%;
+}
+.banking-review-list,
+.investor-review-list,
+.media-review-list,
+.csr-review-list {
+  height: 80%;
+  width: 100%;
+  padding: 15px 30px;
+  transition: all 0.5s ease;
+}
+.banking-review-list:hover,
+.investor-review-list:hover,
+.media-review-list:hover,
+.csr-review-list:hover {
+  background-color: #7a7a7a34;
+}
+.review-list {
+  color: var(--e-global-color-text);
+  transition: all 300ms ease;
+  font-size: var(--small-font-size);
+  font-family: "Roboto";
+}
+.banking-review-write-up,
+.about-review-write-up,
+.investor-review-write-up,
+.media-review-write-up,
+.csr-review-write-up {
+  width: 38%;
+  height: 100%;
+  border-left: #7070701f 1px solid;
+}
+
+.banking-head,
+.about-head,
+.investor-head,
+.media-head,
+.csr-head {
+  font-size: var(--bigger-font-size);
+  font-family: "Roboto";
+  padding-bottom: 10px;
+  padding-left: 17px;
+}
+.banking-paragraph,
+.about-paragraph,
+.investor-paragraph,
+.media-paragraph,
+.csr-paragraph {
+  padding: 0px 15px 0 20px;
+  color: var(--e-global-color-secondary);
+  font-size: var(--small-font-size);
+  font-family: "Roboto";
+  font-size: 21px;
+}
+
+.banking-review-image,
+.about-review-image,
+.investor-review-image,
+.media-review-image,
+.csr-review-image {
+  width: 38%;
+}
+.banking-image-container {
+  width: 100%;
+  height: 90%;
+  background-image: url("../images/This-Bank-Never-Close.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-image-container {
+  width: 100%;
+  height: 90%;
+  background-image: url("../images/uba-mega-menu-banners-ideas-global.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.investor-image-container {
+  width: 100%;
+  height: 90%;
+  background-image: url("../images/uba-mega-menu-banners-banking.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.media-image-container {
+  width: 100%;
+  height: 90%;
+  background-image: url("../images/uba-mega-menu-banners-cards-ng-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.csr-image-container {
+  width: 100%;
+  height: 90%;
+  background-image: url("../images/UBA-Foundation-Menu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.open-icon {
+  display: none;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+  cursor: pointer;
+}
+.mobile-close-container1 {
+  display: none;
+  font-size: var(--big-font-size);
+  color: var(--e-global-color-text);
+}
+.mobile-dropdown {
+  display: none;
+}
+
+@media (max-width: 1030px) {
+  .nav-menu {
+    display: none;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .search-icon-wrapper {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  .open-close-container1 {
+    display: block;
+  }
+  .uba-icon-wrapper {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .uba-icon {
+    width: 50%;
+  }
+  .open-icon {
+    font-size: 30px;
+    display: block;
+    transition: all 0.5s ease;
+    color: var(--e-global-color-text);
+  }
+  .open-icon:active {
+    transform: translateY(2px);
+  }
+  .hide {
+    color: var(--e-global-color-text);
+    transition: all 0.5s ease;
+    font-size: 30px;
+    display: none;
+  }
+  .hide:active {
+    transform: translateY(2px);
+  }
+  .mobile-close-container {
+    display: block;
+    font-size: var(--big-font-size);
+    color: var(--e-global-color-text);
+    background-color: #d70900;
+  }
+
+  .mobile-dropdown {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color);
+    border-top: #7070701a solid 1px;
+    flex-direction: column;
+    gap: var(--gap-2);
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    transform: translateY(10px);
+    display: block;
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding-right: 20px;
+    /* padding-top: 10px; */
+    z-index: 9;
+  }
+  .mobile-search-container {
+    height: 10vh;
+    border-bottom: #7070702d solid 1px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  .mobile-search-icon span {
+    font-size: 1.1rem;
+    color: #7a7a7a6c;
+  }
+  .mobile-search-icon {
+    width: 5%;
+    display: flex;
+    align-items: center;
+  }
+  .mobile-input-filed {
+    display: flex;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+  }
+  .dsh-mobile-menu-search {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 2;
+    color: #707070;
+    width: 100%;
+    height: 75%;
+    width: 100%;
+    border: 0 none;
+    background: transparent;
+  }
+  ::-webkit-input-placeholder {
+    color: #7a7a7a6c;
+  }
+  .dsh-mobile-menu-search:focus {
+    outline: transparent;
+  }
+  .mobile-nav-text {
+    text-decoration: underline;
+    color: #555555;
+    transition: all 300ms ease;
+    font-size: 14px;
+    font-family: "Roboto";
+  }
+  .hide-mobile-dropdown {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .mobile-banking-list,
+  .mobile-about-list,
+  .mobile-invest-list,
+  .mobile-media-list,
+  .mobile-csr-list {
+    /* background-color: #d70900; */
+    transition: all 0.4s ease-in-out;
+  }
+
+  .hide-banking-dropdown,
+  .hide-about-dropdown,
+  .hide-invest-dropdown,
+  .hide-media-dropdown,
+  .hide-csr-dropdown {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .hide-mobile-menu {
+    display: none;
+  }
+  .mobile-bankbutton {
+    margin-left: 50px;
+    /* padding-top: 17px; */
+    font-weight: 400 !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mobile-navbar-item {
+    /* padding-top: 17px; */
+    font-weight: 400 !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .mobile-internet-button {
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400 !important;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    height: 65%;
+    border-radius: 0.3rem;
+    background: linear-gradient(90deg, #d51709 0%, #aa0000 100%) !important;
+  }
+  .mobile-internet-button:hover {
+    background: linear-gradient(90deg, #d51709 100%, #aa0000 0%) !important;
+  }
+  .mobile-internet-button span {
+    color: #fff;
+    font-size: var(--smaller-font-size);
+  }
+  .mobile-internet-button a {
+    color: #fff;
+    font-size: var(--smaller-font-size);
+  }
+  .text-and-icon-container {
+    border-bottom: #7070702d solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 40px;
+    margin-left: 50px;
+    /* border: solid red 2px; */
+    padding-right: 20px;
+  }
+  .mobile-nav-item {
+    border-bottom: #7070702d solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 40px;
+    margin-left: 50px;
+    /* border: solid red 2px; */
+    padding-right: 20px;
+  }
+  .country-map-and-icon-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #7070702d solid 1px;
+    margin-left: 50px;
+    width: 20%;
+    height: 40px;
+  }
+  .country-map-wrapper {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .mobile-word-map {
+    width: 20px;
+  }
+  .mobile-dropdown-review-list {
+    color: var(--e-global-color-text);
+    transition: all 300ms ease;
+    font-size: var(--small-font-size);
+    font-family: "Roboto";
+    padding: 0 50px;
+    text-decoration: underline;
+  }
 }
