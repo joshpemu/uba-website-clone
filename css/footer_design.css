@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-family: "Encode Sans", sans-serif;
+}
+
+:root {
+  --e-global-color-primary: #6ec1e4;
+  --e-global-color-secondary: #7a7a7a;
+  --first-color-alt: #d70900;
+  --title-color: #1e1e1e;
+  --e-global-color-text: #707070;
+  --white-color: #ffffff;
+  --body-color: #f4f4f4;
+  --e-global-color-bd6ef5f: #e5e5e5;
+  --box-shadow: 0 2px 16px #00000019;
+
+  /* Font and typography */
+  --biggest-font-size: 2.25rem;
+  --bigger-font-size: 2rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.2rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.94rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --smallest-font-size: 0.7rem;
+
+  /* Margin bottom */
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --mb-3-5: 3.5rem;
+  --mb-4: 4rem;
+
+  /* Font weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+}
+/* footer */
+
+.the-footer {
+  margin-top: 3vh;
+  padding: 20px 0;
+  /* height: 120vh; */
+  background-color: #fff;
+  /* box-shadow: ; */
+}
+.massage-icon-cotainer {
+  padding: 15px 0;
+}
+.footer-text-message-container {
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-text-message {
+  font-family: "Roboto", serif;
+  color: var(--e-global-color-secondary);
+  font-size: 17px;
+}
+.footer-message-icon {
+  text-align: center;
+}
+.imagesMessages-for-Business-Icon {
+  height: 57px;
+}
+.text-message-container2 {
+  padding: 10px 0;
+  text-align: center;
+}
+.text-message2 {
+  font-family: "Roboto", serif;
+  color: var(--e-global-color-secondary);
+  font-size: 17px;
+}
+
+.achivement-cotainer {
+  padding: 20px 0;
+  display: flex;
+}
+.leadership-image {
+  width: 33.3em;
+  height: 150px;
+  background-image: url("../images/UBA-Leadership-header2-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.achivement-image {
+  height: 150px;
+  width: 33.3em;
+  background-image: url("../images/UBA-Group-Achievements.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-uba-image {
+  height: 150px;
+  width: 33.3em;
+  background-image: url("../images/UBA-Header-inner-page-about-uba.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.leadership-background,
+.achivement-background,
+.about-uba-background {
+  background-color: #d70b0097;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lead-text {
+  position: relative;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 500;
+}
+.lead-text::after {
+  content: "";
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  background-color: #ffffff9c;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+  border-radius: 3px;
+}
+.lead-text:hover::after {
+  transform: translateY(8px);
+  width: 100%;
+  content: "Read more";
+}
+
+.uba-support-investor-container {
+  /* height: 380px; */
+  padding-bottom: 20px;
+}
+.uba-support-investor-warpper {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+.groupinvestors,
+.quickslink-helps {
+  display: flex;
+  width: 33.5%;
+  column-gap: 30px;
+}
+.uba-group,
+.uba-investors,
+.quickslink,
+.helps {
+  width: 50%;
+}
+.one-time-style {
+  font-size: 18px;
+  color: #222222;
+  font-family: "Roboto", serif;
+}
+.footer-icon-box {
+  width: 33.5%;
+  padding-left: 40px;
+  padding-top: 6px;
+}
+.footer-list {
+  padding: 8px 0;
+}
+.footer-tags {
+  color: #777777;
+  font-size: 17px;
+  font-family: "Roboto", serif;
+  transition: all 0.5s ease;
+}
+.footer-tags:hover {
+  color: var(--first-color-alt);
+}
+.playstore-applestore {
+  display: flex;
+  height: 50px;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.applestore-container {
+  width: 150px;
+  background-color: #000;
+  display: flex;
+  border-radius: 0.3rem;
+  justify-content: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  gap: 10px;
+}
+.applestore-container:hover {
+  background-color: #000000da;
+}
+.playstore-container {
+  width: 150px;
+  background-color: #000;
+  display: flex;
+  border-radius: 0.3rem;
+  justify-content: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  gap: 10px;
+}
+.playstor-warpper {
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+.apple-icon,
+.playstore-icon {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.google-play {
+  height: 25px;
+}
+.ri-apple-fill {
+  color: #fff;
+  font-size: 25px;
+}
+.apple-text,
+.playstore-text {
+  text-align: left;
+  width: 60%;
+}
+.apple-text1,
+.playstore-text1 {
+  font-size: 8px;
+  color: #fff;
+  font-family: "Roboto", serif;
+}
+.apple-text2,
+.playstore-text2 {
+  font-size: 14px;
+  font-family: "Roboto", serif;
+  color: #fff;
+}
+.social-icon-boxes {
+  height: 43px;
+  width: 300px;
+  display: flex;
+  gap: 15px;
+}
+.icon-head-text {
+  font-size: 18px;
+  color: #222222;
+  font-family: "Roboto", serif;
+  padding-bottom: 10px;
+}
+.social-icon1,
+.social-icon2,
+.social-icon3,
+.social-icon4,
+.social-icon5 {
+  height: 100%;
+  width: 14%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons {
+  background-color: #77777734;
+  border: #777777 1px solid;
+  color: #777777;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+.footer-icons:hover {
+  background-color: var(--first-color-alt);
+  border: transparent;
+  color: #fff;
+}
+.gt_selector {
+  width: 100%;
+  height: 43px;
+  color: #777777;
+  font-size: 17px;
+  font-family: "Roboto", serif;
+  transition: all 0.5s ease;
+}
+.gt_selector:focus {
+  outline: none;
+}
+
+@media (max-width: 1018px) {
+  .achivement-cotainer {
+    flex-direction: column;
+  }
+  .leadership-image {
+    width: 100%;
+    border-top: #ffffff3b 1px solid;
+  }
+  .achivement-image {
+    width: 100%;
+    border-top: #ffffff3b 1px solid;
+  }
+  .about-uba-image {
+    width: 100%;
+    border-top: #ffffff3b 1px solid;
+  }
+
+  .uba-support-investor-warpper {
+    flex-direction: column;
+  }
+  .playstore-applestore {
+    justify-content: center;
+  }
+  .groupinvestors,
+  .quickslink-helps {
+    width: 100%;
+  }
+  .footer-icon-box {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 0;
+  }
+  .social-icon-boxes {
+    margin: auto;
+    width: 300px;
+  }
+  .icon-head-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 345px) {
+  .groupinvestors,
+  .quickslink-helps {
+    flex-direction: column;
+  }
+  .uba-group,
+  .uba-investors,
+  .quickslink,
+  .helps {
+    width: 100%;
+  }
+  .footer-icon-box {
+    padding-left: 0;
+  }
+}
+.uba-terms-conditions {
+  background-color: #222222;
+  /* height: 140px; */
+  margin-top: 20px;
+  padding: 50px 0;
+  padding-left: 40px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.condit-text,
+.condit-text2 {
+  color: #aaaaaa;
+  font-size: 17px;
+  font-family: "Roboto", serif;
+  padding-bottom: 10px;
+}
+.terms {
+  display: flex;
+  align-items: flex-start;
+}
+.terms1,
+.terms2 {
+  color: #aaaaaa;
+  font-size: 17px;
+  font-family: "Roboto", serif;
+  padding: 20px 10px;
+  text-decoration: underline;
+}
+.terms-wrapper {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.footer-logo-wrapper {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  height: 25px;
+}
+@media (max-width: 1018px) {
+  .uba-terms-conditions {
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+  .terms {
+    justify-content: center;
+  }
+  .conditions {
+    text-align: center;
+  }
+}
+@media (max-width: 499px) {
+  .terms {
+    flex-direction: column;
+    text-align: center;
+  }
+  .terms-wrapper {
+    margin: auto;
+  }
+  .footer-logo-wrapper {
+    margin: auto;
+  }
+}
