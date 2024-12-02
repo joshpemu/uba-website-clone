@@ -1,0 +1,992 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --e-global-color-primary: #6ec1e4;
+  --e-global-color-secondary: #7a7a7a;
+  --first-color-alt: #d70900;
+  --title-color: #1e1e1e;
+  --e-global-color-text: #707070;
+  --white-color: #ffffff;
+  --body-color: #f4f4f4;
+  --e-global-color-bd6ef5f: #e5e5e5;
+  --box-shadow: 0 2px 16px #00000019;
+
+  /* Font and typography */
+  --biggest-font-size: 2.25rem;
+  --bigger-font-size: 2rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.2rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.94rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --smallest-font-size: 0.7rem;
+
+  /* Margin bottom */
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --mb-3-5: 3.5rem;
+  --mb-4: 4rem;
+
+  /* Font weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+}
+
+.hero-about-container {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  background-image: url("../images/UBA-Header-inner-page-about-uba.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding-top: 90px; */
+  backdrop-filter: 2;
+}
+
+.hero-container {
+  padding-top: 180px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000098;
+  backdrop-filter: brightness(5px);
+}
+.hero-content {
+  width: 95%;
+  margin: auto;
+}
+
+.hero-title {
+  padding-top: 80px;
+  color: #fff;
+
+  padding-bottom: 15px;
+}
+.UBA-title {
+  font-size: 42px;
+}
+.intro-message p {
+  font-family: "Roboto", serif;
+  font-size: 27px;
+  /* word-spacing: 2px; */
+  letter-spacing: 1px;
+  color: #fff;
+  /* max-width: 1200px; */
+  /* min-width: 76vh; */
+
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.link-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  background: linear-gradient(90deg, #d51709 0%, #aa0000 100%) !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+}
+.brochure-link {
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 1224px) {
+  .hero-content {
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 916px) {
+  .hero-content {
+    width: 70%;
+    height: 100%;
+  }
+
+  .intro-message-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 26px;
+  }
+  .intro-message p {
+    font-size: 20px;
+  }
+  .UBA-title {
+    font-size: 32px;
+    font-weight: 560;
+  }
+}
+@media (max-width: 650px) {
+  .hero-about-container {
+    height: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .intro-message p {
+    font-size: 20px;
+  }
+}
+
+/* body */
+
+.body-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-content {
+  position: relative;
+  background-color: white;
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 95%;
+  max-width: 100%;
+  bottom: 80px;
+  /* padding-left: 60px; */
+}
+
+.title-container {
+  display: flex;
+}
+
+.small-title-container {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+}
+.home {
+  color: red;
+}
+
+.home:hover {
+  color: rgb(0, 4, 255);
+}
+
+.about {
+  color: var(--e-global-color-text);
+}
+.share-link {
+  color: var(--e-global-color-text);
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.share-link:hover {
+  color: red;
+}
+
+.home-share-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-container {
+  padding-bottom: 80px;
+}
+
+.body-title {
+  padding-top: 10px;
+  width: 40%;
+  font-size: 28px;
+}
+
+.body-sub-text {
+  width: 60%;
+  color: grey;
+  /* border: 2px solid green; */
+  font-size: 19px;
+  font-weight: 400;
+}
+/* message box */
+.message-box-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.message-box-wrapper {
+  padding-right: 10px;
+  text-align: end;
+  position: relative;
+  bottom: 5px;
+  right: 4px;
+  z-index: 4;
+  position: fixed;
+}
+.message-box {
+  height: 60px;
+}
+
+.full-body-content {
+  display: flex;
+  width: 100%;
+}
+
+.article-title-container {
+  display: flex;
+  /* border: 2px solid green; */
+  width: 95%;
+  margin: auto;
+  height: 40%;
+  gap: 20px;
+}
+
+.article-title {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.article-content-container {
+  width: 70%;
+  font-size: 19px;
+}
+.article-content {
+  color: #707070;
+}
+
+.article-subtitle {
+  color: rgba(0, 0, 0, 0.575);
+}
+
+.certificate-link-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #d51709 0%, #aa0000 100%) !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.certificate-link,
+.corporate-brochure {
+  text-decoration: none;
+  color: #fff;
+}
+
+.article-image-container {
+  width: 30%;
+}
+.img-container1 {
+  height: 600px;
+
+  background-image: url("../images/uba-africas-global-bank-united-bank.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 600px; */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.404);
+}
+
+@media (max-width: 1224px) {
+  .body-content {
+    bottom: 0;
+    padding-bottom: 35px;
+  }
+  .article-image-container {
+    display: flex;
+    align-items: center;
+  }
+  .img-container1 {
+    height: 600px;
+    width: 600px;
+  }
+
+  .article-content-container {
+    font-size: 20px;
+    width: 70%;
+  }
+}
+
+/* @media (max-width: 1120px) {
+  .article-image-container {
+    height: 500px;
+    width: 300px;
+  }
+
+}
+@media (max-width: 1020px) {
+  .article-image-container {
+    height: 450px;
+    width: 400px;
+  }
+}
+@media (max-width: 925px) {
+  .article-image-container {
+    height: 400px;
+    width: 380px;
+  }
+}
+
+@media (max-width: 920px) {
+  .article-image-container {
+    height: 380px;
+    width: 360px;
+  }
+}
+@media (max-width: 910px) {
+  .ceo_img-contianer {
+    height: 360px;
+    width: 320px;
+  }
+} */
+@media (max-width: 767px) {
+  .title-container {
+    flex-direction: column;
+  }
+  .body-title {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+  }
+  .body-sub-text {
+    width: 100%;
+    font-size: 20px;
+    padding: 30px;
+  }
+  .article-title-container {
+    flex-direction: column;
+  }
+  .article-content-container {
+    width: 100%;
+  }
+
+  .article-image-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .home-share-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+}
+/* Vision/Mission  */
+.vison-mission-wrapper {
+  display: flex;
+  background-color: rgba(170, 157, 157, 0.37);
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 80px;
+}
+
+.vision-image,
+.mission-image {
+  padding-bottom: 40px;
+}
+.mission-wrapper,
+.vision-wrapper {
+  text-align: center;
+  font-size: 20px;
+}
+
+.statement-text {
+  padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .vison-mission-wrapper {
+    flex-direction: column;
+  }
+  .vision-wrapper {
+    width: 100%;
+  }
+  .mission-wrapper {
+    width: 100%;
+  }
+}
+/* ceo message */
+.CEO-message-container {
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.ceo-message {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  /* border: 2px solid blue; */
+}
+
+.message-title {
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: 580;
+}
+
+.ceo-message-text {
+  flex: 2;
+  padding-top: 30px;
+
+  font-size: 18px;
+  /* border: 2px solid blue; */
+  color: grey;
+}
+
+.CEO-image-container {
+  flex: 1;
+  /* border: #d51709 solid 2px; */
+}
+.ceo_img-contianer {
+  height: 400px;
+  width: 400px;
+
+  background-image: url("../images/Oliver-Alawuba-768x768.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.404);
+  /* border: 2px solid red; */
+}
+.ceo-img {
+  /* height: 400px;
+  width: 400px; */
+}
+.ceo-name {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+}
+@media (max-width: 1224.44px) {
+  .ceo_img-contianer {
+    height: 360px;
+    width: 360px;
+  }
+}
+@media (max-width: 1120px) {
+  .ceo_img-contianer {
+    height: 340px;
+    width: 340px;
+  }
+}
+@media (max-width: 1020px) {
+  .ceo_img-contianer {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 925px) {
+  .ceo_img-contianer {
+    height: 320px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 920px) {
+  .ceo_img-contianer {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 910px) {
+  .ceo_img-contianer {
+    height: 290px;
+    width: 290px;
+  }
+}
+@media (max-width: 767px) {
+  .ceo-message {
+    flex-direction: column;
+  }
+  .CEO-image-container {
+    width: 100%;
+  }
+  .ceo-message-text {
+    width: 100%;
+  }
+  .ceo_img-contianer {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .ceo-img {
+    width: 100%;
+    height: 641px;
+  } */
+}
+
+/* Strategic Intent */
+.strategic-intent-container {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.strategic-intent-content {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  /* border: solid 2px blue; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.strategic-image {
+  height: 600px;
+  width: 50%;
+  /* border: #d51709 solid 2px; */
+  background-image: url("../images/uba-corporate-brochure-1024x768.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.404);
+}
+
+.strategic-text-title {
+  font-size: 25px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  bottom: 20px;
+}
+
+.strategic-text-article {
+  width: 50%;
+  /* border: #aa0000 solid 2px; */
+}
+
+.strategic-text {
+  font-size: 19px;
+  color: grey;
+}
+
+.strategic-btn-container {
+  padding-top: 20px;
+}
+
+@media (max-width: 1224px) {
+  .strategic-image {
+    height: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  .strategic-image {
+    height: 450px;
+    width: 550px;
+  }
+}
+@media (max-width: 940px) {
+  .strategic-image {
+    height: 400px;
+    width: 500px;
+  }
+}
+@media (max-width: 935px) {
+  .strategic-image {
+    height: 350px;
+    width: 450px;
+  }
+}
+@media (max-width: 920px) {
+  .strategic-image {
+    height: 300px;
+    width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .strategic-intent-content {
+    flex-direction: column;
+  }
+
+  .strategic-text-article {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .strategic-image {
+    width: 100%;
+    height: 580px;
+  }
+}
+
+/* cards section */
+/* .cards-content-container {
+  width: 100%;
+  display: flex;
+}
+.card-content {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px red;
+  gap: 30px;
+}
+.card {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.404);
+}
+.card-image {
+  height: 250px;
+  width: 450px;
+}
+
+.img-title {
+  position: relative;
+  bottom: 100px;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.foot-note-container {
+}
+
+.foot-note {
+  padding-left: 30px;
+  font-size: 19px;
+  padding-bottom: 60px;
+  color: rgb(77, 76, 76);
+  font-weight: 280;
+}
+.learn-more-container {
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
+
+.learn-more {
+  font-size: 20px;
+  color: red;
+  font-weight: 250;
+}
+
+.two {
+  display: flex;
+  padding-top: 30px;
+} */
+
+.card-content {
+  width: 95%;
+  padding: 20px 0;
+  /* border: 2px solid green; */
+  margin: auto;
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+}
+.card {
+  width: 33%;
+  height: 500px;
+  /* border: 2px solid purple; */
+
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.404);
+  margin-bottom: 15px;
+}
+
+.leadership-images {
+  width: 100%;
+  height: 50%;
+  /* border: 2px solid blue; */
+  background-image: url("../images/UBA-section-inner-page-board-of-directors.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leadership {
+  width: 100%;
+  height: 50%;
+  /* border: 2px solid blue; */
+}
+
+.image-link {
+  width: 100%;
+  height: 100%;
+  background-color: #00000069;
+  transition: all 0.5s ease;
+}
+
+.img-title {
+  color: #fff;
+  position: relative;
+  top: 85px;
+  padding-left: 30px;
+}
+
+.image-link:hover {
+  background-color: #aa000027;
+}
+
+.foot-note {
+  margin: auto;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  font-size: 17px;
+  color: rgb(77, 76, 76);
+  font-weight: 280;
+}
+
+.learn-more {
+  padding-left: 40px;
+  font-size: 20px;
+  color: red;
+  font-weight: 250;
+}
+
+.business {
+  background-image: url("../images/UBA-section-inner-page-business-focus.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partnership {
+  background-image: url("../images/UBA-section-inner-page-partnership.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.awards {
+  background-image: url("../images/UBA-section-inner-page-awards.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.strengths {
+  background-image: url("../images/UBA-section-inner-page-share-info.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services {
+  background-image: url("../images/UBA-Header-inner-page-initiatives.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 12000px) {
+  .card-content {
+    column-gap: 20px;
+  }
+
+  .foot-note {
+    font-size: 19px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-content {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+/* uba brand */
+
+.about-uba-brand-container {
+  width: 100%;
+  padding-top: 40px;
+}
+.about-uba-brand-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  width: 95%;
+  margin: auto;
+}
+.brand-image-container {
+  width: 50%;
+  height: 500px;
+  /* border: #d51709 solid 2px; */
+  background-image: url("../images/uba-board-learning-session-2016-20.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.404);
+}
+
+.uba-brand-article {
+  width: 50%;
+}
+.uba-brand-text {
+  font-size: 18.5px;
+  color: grey;
+}
+
+.uba-brand-article-title {
+  font-size: 25px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.brand-btn-container {
+  padding-top: 20px;
+}
+@media (max-width: 1200px) {
+  .brand-image-container {
+    height: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  .brand-image-container {
+    width: 550px;
+  }
+}
+@media (max-width: 940px) {
+  .brand-image-container {
+    width: 500px;
+  }
+}
+@media (max-width: 935px) {
+  .brand-image-container {
+    width: 450px;
+  }
+}
+@media (max-width: 920px) {
+  .brand-image-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-uba-brand-content {
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+  .brand-image-container {
+    width: 100%;
+  }
+  .uba-brand-article {
+    width: 100%;
+  }
+}
+
+/* history content */
+
+.history-container {
+  width: 100%;
+}
+
+.history-content {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.history-article {
+  width: 50%;
+}
+
+.history-text-title {
+  padding-bottom: 40px;
+}
+
+.history-text {
+  font-size: 18.5px;
+  color: grey;
+}
+.history-image {
+  width: 50%;
+  background-image: url("../images/uba-house-about.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.404);
+}
+.history-btn {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .history-image {
+    height: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  .history-image {
+    width: 550px;
+  }
+}
+@media (max-width: 940px) {
+  .history-image {
+    width: 500px;
+  }
+}
+@media (max-width: 935px) {
+  .history-image {
+    height: 350px;
+    width: 450px;
+  }
+}
+@media (max-width: 920px) {
+  .history-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .history-content {
+    flex-direction: column;
+  }
+  .history-article {
+    width: 100%;
+  }
+  .history-image {
+    width: 100%;
+  }
+}
