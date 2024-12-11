@@ -48,6 +48,11 @@ body {
   --font-weight-medium: 500;
   --font-weight-bold: 600;
 }
+@media (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
 
 .hero-about-container {
   display: flex;
@@ -143,6 +148,7 @@ body {
     font-weight: 560;
   }
 }
+
 @media (max-width: 650px) {
   .hero-about-container {
     height: 100%;
@@ -441,6 +447,13 @@ body {
   }
   .mission-wrapper {
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .vison-mission-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 /* ceo message */
